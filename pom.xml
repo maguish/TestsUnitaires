@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Test_Unitaire</groupId>
+  <artifactId>Test_Unitaire</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <!-- Indiquer l'encodage et le projet en Java 11 -->
+  <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <maven.compiler.source>11</maven.compiler.source>
+	  <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+	  <!-- Déclaration de la dépendance vers JUnit -->
+	  <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+	  <dependency>
+	      <groupId>org.junit.jupiter</groupId>
+	      <artifactId>junit-jupiter</artifactId>
+	      <version>5.10.1</version>
+	      <scope>test</scope>
+	  </dependency>
+	  <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+	  <dependency>
+		   <groupId>org.assertj</groupId>
+		   <artifactId>assertj-core</artifactId>
+		   <version>3.25.2</version>
+		   <scope>test</scope>
+	  </dependency>
+  </dependencies>
+  
+  <!-- Pour être compatible avec JUnit 5 -->
+  <build>
+	<plugins>
+		<plugin>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>3.1.2</version>
+		</plugin>
+		<!-- Plugin JaCoCo -->
+		<plugin>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.11</version>
+			<executions>
+				<execution>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+				</execution>
+				<execution>
+					<id>report</id>
+					<phase>test</phase>
+					<goals>
+						<goal>report</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+  </build>
+</project>
