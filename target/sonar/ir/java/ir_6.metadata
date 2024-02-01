@@ -1,0 +1,9 @@
+main.Calculator#digitsSet(I)Ljava/util/Set;
+java.util.HashSet#<init>()V
+java.lang.String#valueOf(I)Ljava/lang/String;
+java.lang.String#length()I
+java.lang.String#charAt(I)C
+java.lang.Integer#parseInt(Ljava/lang/CharSequence;III)I
+java.util.HashSet#instance-init#
+==
+add java.util.Set#add(Ljava/lang/Object;)Z

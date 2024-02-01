@@ -1,0 +1,9 @@
+å
+main.Calculator#
+<init>main.Calculator#<init>()VE
+addTwoPositivesNumbers+main.Calculator#addTwoPositivesNumbers(DD)DE
+addTwoPositivesNumbers+main.Calculator#addTwoPositivesNumbers(II)I8
+	digitsSet+main.Calculator#digitsSet(I)Ljava/util/Set;5
+longCalculation"main.Calculator#longCalculation()VM
+mutiplyTwoPositivesNumbers/main.Calculator#mutiplyTwoPositivesNumbers(DD)DM
+mutiplyTwoPositivesNumbers/main.Calculator#mutiplyTwoPositivesNumbers(II)Ijava.lang.Object
